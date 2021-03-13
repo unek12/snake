@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="leaderboard">
+            Best score: <span id="best__score">0</span>
+        </div>
+        <div class='meter'>
+            <meter low='35' high="60" optimum="80" min="0" max="100" value="100" class='scoreDeath'></meter>
+            <meter low='35' high="60" optimum="80" min="0" max="100" value="0" class='bonus'></meter>
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+    <div id='modal__restart' class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                You lose
+                <button id="restart">restart</button>
+                <button id='menu'>menu</button>
+            </div>
+        </div>
+    </div>
+    <div id='modal__play' class="modal show">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <button id="play">play</button>
+                <button id="shop">shop</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
