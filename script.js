@@ -32,6 +32,11 @@ document.querySelector('#menu').addEventListener('click', () => {
     localStorage.setItem('menu', 'open');
 });
 
+// shop
+
+document.querySelector('#shop').addEventListener('.click', () => {
+
+});
 
 
 // start
@@ -50,25 +55,25 @@ document.querySelector('#play').addEventListener('click', () => {
 
 document.addEventListener('keydown', (key) => {
     if (key.code === 'KeyW' || key.code === 'KeyA' || key.code === 'KeyS' || key.code === 'KeyD') {
-        if (key.code === 'KeyW' && buff != 'down' && buff !== 'up') {
+        if (key.code === 'KeyW' && buff !=='down' && buff !== 'up') {
             up = 1;
             down = 0;
             left = 0;
             right = 0;
         } else
-        if (key.code === 'KeyA' && buff != 'right' && buff !== 'left') {
+        if (key.code === 'KeyA' && buff !== 'right' && buff !== 'left') {
             up = 0;
             down = 0;
             left = 1;
             right = 0;
         } else
-        if (key.code === 'KeyS' && buff != 'up' && buff !== 'down') {
+        if (key.code === 'KeyS' && buff !=='up' && buff !== 'down') {
             up = 0;
             down = 1;
             left = 0;
             right = 0;
         } else
-        if (key.code === 'KeyD' && buff != 'left' && buff !== 'right') {
+        if (key.code === 'KeyD' && buff !== 'left' && buff !== 'right') {
             up = 0;
             down = 0;
             left = 0;
@@ -103,7 +108,7 @@ function play() {
         table.innerHTML += `<div class='row'></div>`;
         const div = document.querySelectorAll('.row');
         for (let j = 0; j < 17; j++) {
-            div[i].innerHTML += `<div class='item'><div clas='text'></div></div>`;
+            div[i].innerHTML += `<div class='item'><div class='text'></div></div>`;
         }
     }
     let scoreDiv = document.querySelector('#score');
