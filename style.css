@@ -106,9 +106,9 @@ body {
 }
 
 .head {
-    background: url(./img/floid.jpg);
-    background-color: red;
-    background-size: 30px;
+    background: url(./img/floid.jpg) !important;
+    background-size: 30px !important;
+    background: black;
 }
 
 
@@ -127,7 +127,7 @@ body {
 }
 
 .modal__dialog {
-    max-width: 400px;
+    max-width: 300px;
     margin: 200px auto
 }
 
@@ -147,9 +147,9 @@ body {
 
 /* modal shop */
 
-#modal__shop {
-    display: none;
+.modal__shop {
     position: fixed;
+    display: none;
 }
 
 .shop__dialog {
@@ -170,7 +170,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     border-radius: 25px;
-    margin: 40px 40px;
+    margin: 30px 30px;
     width: 200px;
     height: 200px;
     background-color: aqua;
@@ -219,6 +219,16 @@ body {
     margin: 4px auto;
 }
 
+.item__selected {
+    margin: 0 10px 10px;
+    text-align: center;
+    font-size: 28px;
+    background: #fff;
+    display: none;
+    width: 180px;
+    border-radius: 20px;
+    height: 35px;
+}
 
 /* #restart {
     display: block;
